@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* CSS Reset */
+* {
+    margin         : 0;
+    padding        : 0;
+    list-style     : none;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font      : 'Roboto', sans-serif;
+    --primary : white;
+    --secondry: #f2f2f2;
+    --tertiary:rgb(235 230 230);;
+}
+
+body{
+    background: var(--secondry);
+}
+
+/* header-section */
+.navbar{
+    position: sticky;
+    top:0px;
+    justify-content: space-between;
+    height:105px;
+    font-family: var(--font);
+    background: var(--primary);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 40px 0px;
+}
+#burger{
+    display: none;
+    height:45px;
+    width:25px;
+    position: absolute;
+    top:7px;
+    left:19px;
+}
+.line{
+    background: black;
+    height: 3px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+.logo > a >img{
+    height:70px;
+}
+
+.navleft{
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    gap:40px;
+}
+.navleft > ul{
+    gap:30px;
+    font-size:17px;
+    font-weight: bold;
+    color: black;
+}
+
+.navright{
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    gap:50px;
+}
+
+.navright > ul{
+    gap:30px;
+
+}
+.search{
+    width: 49%;
+    background: var(--tertiary);
+    height:33px;
+    align-items: center;
+}
+
+#search{
+    flex-grow: 1;
+    background: none;
+    outline: none;
+    border-width:0px;
+    color:black;
+    font-size:14px;
+}
+
+.heroImg > img{
+    width: 100%;
+}
+
+/* .section-1 */
+
+.section-1{
+    gap:15px;
+    justify-content: center;
+}
+.itemImg > img{
+    width: 155px;
+    height: 200px;
+}
+
+.footer-section{
+    box-shadow: rgba(100, 100, 111, 0.2) 40px 0px 0px 0px;
+    height:90px;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+    background: var(--primary);
+    font-size:18px;
+}
+
+/* media-query's */
+@media screen and (max-width:1384px){
+    #search {
+        font-size: 11px;
+        margin-left: 0px;
+        margin-right: 0px;
+}
+.navleft{
+    gap:16px;
+}
+.navleft > ul{
+    gap:16px;
+    font-size:15px;
+    font-weight: bold;
+    color: black;
+}
+.navright{
+    gap:15px;
+}
+.navright > ul{
+    gap:15px;
+
+}
+.search{
+    width: 60%;
+}
+}
+@media screen and (max-width:1085px){
+    #search {
+        font-size: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+}
+.navleft{
+    gap:10px;
+}
+.navleft > ul{
+    gap:16px;
+    font-size:14px;
+    font-weight: bold;
+    color: black;
+}
+.navright{
+    gap:10px;
+}
+.navright > ul{
+    gap:10px;
+
+}
+
+.search{
+    width: 66%;
+}
+}
+
+
+
+

@@ -1,0 +1,57 @@
+.navbar {
+    flex-direction: column;
+    height        : 237px;
+}
+
+.navleft {
+    flex-direction: column;
+
+}
+
+.navright {
+    flex-direction: column;
+
+}
+
+#search {
+    font-size: 12px;
+}
+
+@media screen and (max-width:443px) {
+    #burger {
+        display: block;
+        cursor : pointer;
+    }
+
+    .navleft {
+        opacity: 0;
+
+    }
+
+    .navright {
+
+        opacity: 0;
+
+    }
+
+    .navleft>ul {
+        flex-direction: column;
+    }
+
+    .navbar {
+        height    : 100px;
+        transition: height 0.5s ease-in;
+    }
+
+    .footer-section {
+        font-size: 15px;
+    }
+
+    .navchange {
+        height: 400px;
+    }
+
+    .change {
+        opacity: 1;
+    }
+}
